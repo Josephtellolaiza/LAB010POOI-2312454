@@ -272,7 +272,7 @@ public class SistemaHospital {
 
         Collections.sort(listaPacientes, (p1, p2) -> p1.nombre.compareTo(p2.nombre));
 
-        System.out.println("--- Lista de Pacientes Ordenados por Apellidos ---");
+        System.out.println("--- Lista de Pacientes Ordenados por sus apellidos ---");
         for (Paciente paciente : listaPacientes) {
             System.out.println("Nombre: " + paciente.nombre + ", Apellido: " + paciente.nombre.split(" ")[1]);
         }
@@ -342,7 +342,7 @@ public class SistemaHospital {
     }
 
     private static void mostrarPacientes() {
-        System.out.println("--- Lista de Pacientes ---");
+        System.out.println("--- Lista de los pacientes ---");
         for (int i = 0; i < listaPacientes.size(); i++) {
             Paciente paciente = listaPacientes.get(i);
             System.out.println("[" + (i + 1) + "] " + "DNI: " + paciente.DNI + ", Nombre: " + paciente.nombre +
